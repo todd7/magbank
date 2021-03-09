@@ -3,6 +3,9 @@ import './App.scss';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import CreditCard from './components/CreditCard';
+import CardList from './components/CardList';
+
+import posts from './mock/post';
 
 const App = () => (
     <div className="App">
@@ -11,6 +14,8 @@ const App = () => (
       <Hero />
 
       <CreditCard />
+
+      <CardList posts={posts} />
     </div>
 );
 

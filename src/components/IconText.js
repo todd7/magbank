@@ -7,16 +7,14 @@ const IconText = ({
   icon,
   size = 1,
   color = '#000',
-  className = '',
-  textClassName = '',
   children,
 }) => (
-  <Row className={className}>
+  <Row className="h5 text-muted">
     <Col xs={size} className='d-flex justify-content-center'>
       <FontAwesomeIcon icon={icon} size={`${size}x`} color={color} />
     </Col>
-    <Col xs={12 - size} className={textClassName}>
-      {children}
+    <Col xs={12 - size}>
+     {children}
     </Col>
   </Row>
 );
